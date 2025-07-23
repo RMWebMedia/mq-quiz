@@ -1,5 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import { Sparkles, Moon, Sun, Star, Heart, Shield, Zap, Users, ChevronRight } from 'lucide-react';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MQ Quiz</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://unpkg.com/lucide-static@0.288.0/build/lucide.min.js"></script>
+</head>
+<body class="bg-gradient-to-br from-indigo-950 via-purple-900 to-pink-900 min-h-screen overflow-hidden">
+  <div id="quiz-root"></div>
+
+  <script type="text/babel">
+
+    const { useState, useEffect } = React;
+    const {
+      Sparkles, Moon, Sun, Star, Heart, Shield, Zap, Users, ChevronRight
+    } = lucide;
+
+
 
 const SpiritualManifestationQuiz = () => {
   const [currentScreen, setCurrentScreen] = useState('welcome');
@@ -508,4 +529,20 @@ const SpiritualManifestationQuiz = () => {
   );
 };
 
-export default SpiritualManifestationQuiz;
+
+
+    // Example placeholder:
+    const SpiritualManifestationQuiz = () => {
+      return (
+        <div className="text-white text-center p-10">
+          <h1 className="text-4xl font-bold">Your Quiz Will Appear Here</h1>
+          <p className="mt-4 text-purple-300">Paste the quiz logic inside this React component</p>
+        </div>
+      );
+    };
+
+    ReactDOM.render(<SpiritualManifestationQuiz />, document.getElementById('quiz-root'));
+
+  </script>
+</body>
+</html>
